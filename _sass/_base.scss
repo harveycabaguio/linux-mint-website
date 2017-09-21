@@ -1,0 +1,105 @@
+// Typography
+body {
+  color: $text-color;
+}
+p {
+  font-family: $base-font-family;
+  font-size: $base-font-size;
+  line-height: ($base-font-size * 1.5);
+}
+
+h1 {
+  font-family: $header-font-family;
+  font-size: ($base-font-size * 2.5);
+  font-weight: 300;
+  line-height: ($base-font-size * 3);
+}
+h2 {
+  font-family: $base-font-family;
+  font-size: ($base-font-size * 1.75);
+  font-weight: 300;
+  line-height: ($base-font-size * 2.5);
+  color: $green-dark;
+}
+h3 {
+  font-family: $header-font-family;
+  font-size: ($base-font-size * 1.25);
+  font-weight: 300;
+  line-height: ($base-font-size * 2);
+}
+h4 {
+  font-family: $header-font-family;
+  font-weight: 500;
+  line-height: ($base-font-size * 1.5);
+  color: $green-dark;
+}
+
+a:link {
+  font-family: $base-font-family;
+  font-size: inherit;
+  line-height: inherit;
+  color: $green-dark;
+  text-decoration: none;
+  transition: all 120ms ease-in-out;
+}
+a:hover {
+  transform: translateY(-($spacing-unit / 6));
+}
+a:active {
+  color: $green-light;
+  transform: translateY(($spacing-unit / 6));
+}
+a:visited {
+  color: $green-dark;
+  text-decoration: underline;
+}
+
+.less-important {
+  opacity: 0.72;
+}
+
+// layout
+.content {
+  width: $content-width-1280;
+}
+@media screen and (max-width: 767px) {
+  .content {
+    width: calc(100% - #{$spacing-unit * 8});
+    margin-left: ($spacing-unit * 4);
+    margin-right: ($spacing-unit * 4);
+  }
+}
+@media screen and (max-width: 540px) {
+  .content {
+    width: calc(100% - #{$spacing-unit * 4});
+    margin-left: ($spacing-unit * 2);
+    margin-right: ($spacing-unit * 2);
+  }
+}
+
+// table 
+table {
+  border: 1px solid rgba($text-color, 0.12);
+  font-family: $base-font-family;
+  vertical-align: baseline;
+}
+thead {
+  border-bottom: 1px solid rgba($text-color, 0.06);
+}
+tr:nth-child(even) {
+  background-color: rgba($text-color, 0.03);
+}
+th, td {
+  padding-top: ($spacing-unit / 2);
+  padding-bottom: ($spacing-unit / 2);
+  padding-left: ($spacing-unit);
+  padding-right: ($spacing-unit);
+}
+th:first-child,
+td:first-child {
+  border-right: 1px solid rgba($text-color, 0.06);
+}
+
+::selection {
+  background-color: rgba($green-light, 0.48);
+}

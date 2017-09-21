@@ -1,0 +1,211 @@
+#hero {
+  background-image: linear-gradient(to bottom right, $green-dark, $green-light);
+  color: $background-color;
+  text-align: center;
+  
+  .content {
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: ($spacing-unit * 6);
+    padding-bottom: ($spacing-unit * 10);
+    
+    h1 {
+      margin-bottom: ($spacing-unit);
+      @include white-text-shadow(1px, 2px, 0.48);
+    }
+    h2 {
+      margin-bottom: ($spacing-unit * 2);
+      color: $background-color;
+      @include white-text-shadow(1px, 2px, 0.48);
+    }
+  } //.content
+} //#hero
+// Responsive
+@media screen and (max-width: 666px) {
+  #hero {
+    .content {
+      padding-top: ($spacing-unit * 11);
+    }
+  }
+}
+
+#os-flavours {
+  background-color: #fafafa;
+  
+  .content {
+    width: (960px + 96px);
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: ($spacing-unit * 6);
+    padding-bottom: ($spacing-unit * 6);
+    
+    h2 {
+      margin-bottom: ($spacing-unit * 1);
+      text-align: center;
+    }
+  }
+}
+.card-wrapper {
+  display: flex;
+  flex-direction: row;
+}
+.card {
+  width: (960px / 2);
+  margin-top: ($spacing-unit * 2);
+  margin-bottom: ($spacing-unit * 2);
+  margin-left: ($spacing-unit * 2);
+  margin-right: ($spacing-unit * 2);
+  
+  background-color: $background-color;
+  border-radius: ($spacing-unit / 3);
+  box-shadow: 0 2px 3px 0 rgba(0,0,0,0.06);
+  
+  img {
+    border-top-left-radius: ($spacing-unit / 3);
+    border-top-right-radius: ($spacing-unit / 3);
+  }
+  div {
+    padding: ($spacing-unit);
+  }
+  .button-suggested--green {
+    margin-top: ($spacing-unit);
+  }
+}
+// Responsive
+@media screen and (max-width: 1055px) {
+  #os-flavours {
+    .content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: calc(100% - #{$spacing-unit * 8});
+      margin-left: ($spacing-unit * 4);
+      margin-right: ($spacing-unit * 4);
+    }
+  }
+  .card-wrapper {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 527px) {
+  #os-flavours {
+    .content {
+      width: calc(100% - #{$spacing-unit * 4});
+      margin-left: ($spacing-unit * 2);
+      margin-right: ($spacing-unit * 2);
+    }
+  }
+  .card {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+#thank-you {
+  > .content {
+    width: 100%;
+    padding-top: ($spacing-unit * 6);
+    
+    // border-bottom: 1px solid rgba($text-color, 0.12);
+    
+    > h2 {
+      margin-bottom: ($spacing-unit / 2);
+      text-align: center;
+    }
+    > p {
+      margin-bottom: ($spacing-unit * 2);
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+    }
+  }
+}
+.column-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+}
+.thank-you-column {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: ($spacing-unit * 2);
+  padding-bottom: ($spacing-unit * 2);
+  padding-left: ($spacing-unit * 4);
+  padding-right: ($spacing-unit * 4);
+  
+  background-color: $background-color;
+  box-shadow: 0 0 0 1px rgba($text-color, 0.12);
+  
+  > * {
+    margin-bottom: ($spacing-unit);
+  }
+  .thank-you-cloud {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .thank-you-actions {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    margin-top: auto;
+    
+    > * {
+      margin-bottom: ($spacing-unit);
+      text-align: center;
+    }
+  }
+}
+#donors-table th:nth-child(2),
+#donors-table td:nth-child(2) {
+  text-align: right;
+}
+@media screen and (max-width: 813px) {
+  #thank-you {
+    > .content {
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }
+  .column-wrapper {
+    flex-direction: column;
+  }
+  .thank-you-column {
+    padding-bottom: ($spacing-unit * 0);
+    padding-left: ($spacing-unit * 2);
+    padding-right: ($spacing-unit * 2);
+    
+    
+  }
+}
+
+#recent-news {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  .content {
+    padding-top: ($spacing-unit * 6);
+    padding-bottom: ($spacing-unit * 8);
+    
+    h2 {
+      text-align: center;
+      margin-bottom: ($spacing-unit * 2);
+    }
+    .recent-news-item {
+      padding-top: ($spacing-unit);
+      padding-bottom: ($spacing-unit);
+      
+      h3 {
+        display: inline-block;
+      }
+      .button {
+        margin-top: ($spacing-unit / 2);
+      }
+    }
+  }
+}

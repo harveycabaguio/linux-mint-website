@@ -1,0 +1,155 @@
+---
+layout: default
+title: From freedom came elegance
+---
+{% comment %}Hero{% endcomment %}
+<section id="hero">
+  {% include nav.html %}
+  <div class="content">
+    <h1>{{ page.title }}</h1>
+    <h2>Linux Mint is a modern, powerful, and easy to use Linux distribution used by millions of people</h2>
+    <a class="button-suggested--orange" href="">Download Linux Mint 18.2 Sonya</a>
+  </div>
+</section>
+{% comment %}Showcase Linux Mint{% endcomment %}
+<section id="os-flavours">
+  <div class="content">
+    <h2>Linux Mint comes in 2 flavors:</h2>
+    <span class="card-wrapper">
+      <div class="card" id="cinnamon">
+        <img src="{{ site.baseurl }}/assets/screenshot-cinnamon.png" alt="Cinnamon desktop screenshot">
+        <div>
+          <h3>Cinnamon Edition</h3>
+          <p>Sleek, modern, innovative</p>
+          <a class="button-suggested--green" href="">Download</a>
+        </div>
+      </div>
+      <div class="card" id="mate">
+        <img src="{{ site.baseurl }}/assets/screenshot-mate.png" alt="MATE desktop screenshot">
+        <div>
+          <h3>MATE Edition</h3>
+          <p>Stable, robust, traditional</p>
+          <a class="button-suggested--green" href="">Download</a>
+        </div>
+      </div>
+    </span>
+  </div>
+</section>
+{% comment %}Sponsors, thanking the community{% endcomment %}
+<section id="thank-you">
+  <div class="content">
+    <h2>Thank you</h2>
+    <p class="content">Linux Mint is funded by its community. Many thanks to all the people and organizations who financially support the project.</p>
+    <div class="column-wrapper">
+      <div class="thank-you-column" id="sponsors">
+        <h3>Sponsors</h3>
+        <div class="thank-you-cloud">
+          <a class="cloud-item" href=""><img src="{{ site.baseurl }}/assets/sponsor-pia-logo.png"></a>
+          <a class="cloud-item" href=""><img src="{{ site.baseurl }}/assets/sponsor-eukhost-logo.gif"></a>
+          <a class="cloud-item" href=""><img src="{{ site.baseurl }}/assets/sponsor-thinkpenguin-logo.gif"></a>
+          <a class="cloud-item" href=""><img src="{{ site.baseurl }}/assets/sponsor-acunetix-logo.png"></a>
+          <a class="cloud-item" href=""><img src="{{ site.baseurl }}/assets/sponsor-sucuri-logo.png"></a>
+          <a class="cloud-item" href=""><img src="{{ site.baseurl }}/assets/sponsor-vaultnetworks-logo.png"></a>
+          <a class="cloud-item" href=""><img src="{{ site.baseurl }}/assets/sponsor-ayksolutions-logo.gif"></a>
+        </div>
+        <div class="thank-you-actions">
+          <a class="button" href="">All Sponsors</a>
+          <a class="button-suggested--green" href="">Become a Sponsor</a>
+        </div>
+      </div>
+      <div class="thank-you-column" id="partners">
+        <h3>Partners</h3>
+        <div class="thank-you-cloud">
+          <a class="cloud-item" href=""><img src="{{ site.baseurl }}/assets/partner-nutime-logo.png"></a>
+          <a class="cloud-item" href=""><img src="{{ site.baseurl }}/assets/partner-yahoo-logo.png"></a>
+          <a class="cloud-item" href=""><img src="{{ site.baseurl }}/assets/partner-duckduckgo-logo.png"></a>
+          <a class="cloud-item" href=""><img src="{{ site.baseurl }}/assets/partner-osdisc-logo.png"></a>
+          <a class="cloud-item" href=""><img src="{{ site.baseurl }}/assets/partner-hellotux-logo.gif"></a>
+          <a class="cloud-item" href=""><img src="{{ site.baseurl }}/assets/partner-compulab-logo.png"></a>
+        </div>
+        <div class="thank-you-actions">
+          <a class="button" href="">All Partners</a>
+          <a class="button-suggested--green" href="">Become a Partner</a>
+        </div>
+      </div>
+      <div class="thank-you-column" id="donors">
+        <h3>Donors</h3>
+        <table id="donors-table">
+          <col />
+          <col class="amount" />
+          <thead>
+            <th>Name</th>
+            <th>$</th>
+          </thead>
+          <tr>
+            <td>🇨🇿 Marian R.</td>
+            <td>$20</td>
+          </tr>
+          <tr>
+            <td>🇬🇧 Adeolu O.</td>
+            <td>$5</td>
+          </tr>
+          <tr>
+            <td>🇺🇸 Michael H.</td>
+            <td>$10</td>
+          </tr>
+          <tr>
+            <td>🇫🇷</td>
+            <td>$11</td>
+          </tr>
+          <tr>
+            <td>🇺🇸 David T.</td>
+            <td>$50</td>
+          </tr>
+          <tr>
+            <td>🇮🇹 Jonathan Gaddi Giomini aka "JonnyBarbun87"</td>
+            <td>$2</td>
+          </tr>
+          <tr>
+            <td>🇨🇿 Petr Kopecek</td>
+            <td>$109</td>
+          </tr>
+          <tr>
+            <td>🇦🇺 Terence R.</td>
+            <td>$50</td>
+          </tr>
+          <tr>
+            <td>🇫🇷 Mathieu P. aka "Pila"</td>
+            <td>$11</td>
+          </tr>
+          <tr>
+            <td>🇦🇹 Christian K.</td>
+            <td>$22</td>
+          </tr>
+        </table>
+        <div class="thank-you-actions">
+          <a class="button" href="">See more</a>
+          <a class="button-suggested--green" href="">Donate Now</a>
+        </div>
+      </div>
+  </div>
+</section>
+{% comment %}News{% endcomment %}
+<section id="recent-news">
+  <div class="content">
+    <h2>News</h2>
+    <div class="recent-news-item">
+      <a href=""><h3>Monthly News - August 2017</h3></a>
+      <p class="less-important">September 1</p>
+      <p>First, I would like to thank you for your donations and for your support. It’s a real pleasure to work on improving Linux Mint not only because it’s fun to develop and integrate software and technology but also because we see how happy and excited you are about what we do.. and that’s an amazing feeling for us.</p>
+      <a class="button" href="">Read More</a>
+    </div>
+    <div class="recent-news-item">
+      <a href=""><h3>Monthly News - July 2017</h3></a>
+      <p class="less-important">July 30</p>
+      <p>Many thanks to all the people who donated to us. Thank you for your support. I hope you enjoyed the recent release of Linux Mint 18.2 and the upgrades in LMDE. The development cycle for Linux Mint 18.3 was started and some really exciting improvements landed already.</p>
+      <a class="button" href="">Read More</a>
+    </div>
+    <div class="recent-news-item">
+      <a href=""><h3>How to upgrade to Linux Mint 18.2</h3></a>
+      <p class="less-important">July 3</p>
+      <p>It is now possible to upgrade Linux Mint 18 and 18.1 to version 18.2. If you’ve been waiting for this I’d like to thank you for your patience. Upgrading to 18.2 is relatively easy. In the Update Manager, click on the Refresh button to check for any new version of mintupdate and mint-upgrade-info.</p>
+      <a class="button" href="">Read More</a>
+    </div>
+  </div>
+</section>

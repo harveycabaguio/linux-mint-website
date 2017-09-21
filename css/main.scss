@@ -1,0 +1,37 @@
+---
+---
+@charset "utf-8";
+
+// Type
+$base-font-family:   "Hind", "Open Sans", Arial, sans-serif;
+$base-font-size:     16px;
+$base-font-weight:   400;
+$header-font-family: "Maven Pro", "Ubuntu", "Open Sans", sans-serif;
+
+// Grid
+$spacing-unit:       12px;
+$content-width-1280: ($spacing-unit * 60);
+
+// Color
+$text-color:         #2b2f2b;
+$background-color:   #ffffff;
+$green-dark:         #2a7a5d;
+$green-light:        #98f498;
+// $accent-dark:        #ca4e1e;
+$accent-dark:        #de4313;
+// $accent-light:       #eaaf99;
+$accent-light:       #fec163;
+
+@mixin white-text-shadow($y, $blur, $alpha) {
+  text-shadow: 0 $y $blur rgba(0,0,0,$alpha);
+}
+
+// Import partials from `sass_dir` (defaults to `_sass`)
+@import
+  "reset",
+  "base",
+  "components/buttons",
+  "components/nav",
+  "components/footer",
+  "pages/home"
+;
